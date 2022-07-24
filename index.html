@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="cssclasses.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>ToDo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <h1 class="display-1">ToDo List</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 my-5">
+          <form class="searchform">
+            <input
+              type="text"
+              class="form-control"
+              name="search"
+              placeholder="Search ToDo's"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <ul class="list-group todolist">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              A list item
+
+              <i class="small material-icons deleteicon">delete_forever</i>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              A second list item
+              <i class="small material-icons deleteicon">delete_forever</i>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              A third list item
+              <i class="small material-icons deleteicon">delete_forever</i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center quote" style="display: none">
+        <div class="col-10">
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              <p>
+                "Forget your to-do list and create a to-be list. Create one"
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Frank Sonnenberg, Listen to Your Conscience:
+              <cite title="Source Title">That's Why You Have One</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 my-5">
+          <form class="addform">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"
+                >Add new ToDo</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="New ToDo"
+                name="add"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="sandbox.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
