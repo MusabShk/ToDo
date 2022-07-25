@@ -4,7 +4,7 @@ const quoteForTodo = document.querySelector(".quote");
 const searchForm = document.querySelector(".searchform input");
 const addNewTodo = (todo) => {
   //   console.log(listOfTodos.innerHTML);
-  const htmlTag = `<li class="list-group-item d-flex justify-content-between align-items-center">${todo}<i class="small material-icons deleteicon">delete_forever</i></li>`;
+  const htmlTag = `<li class="list-group-item d-flex justify-content-between align-items-center">${todo}<i class="fa fa-trash deleteicon" aria-hidden="true"></i></li>`;
   listOfTodos.innerHTML += htmlTag;
   addForm.reset();
   addForm.add.blur();
@@ -36,7 +36,13 @@ listOfTodos.addEventListener("click", (e) => {
 // console.log(searchForm.value);
 
 const search = (term) => {
-  //   console.log(listOfTodos.children);
+  // console.log(term);
+  // console.log(listOfTodos.children);
+  // console.log(
+  //   Array.from(listOfTodos.children).filter((todo) => {
+  //     return todo.innerText.toLowerCase().includes(term);
+  //   })
+  // );
   Array.from(listOfTodos.children)
     .filter((todo) => !todo.textContent.toLowerCase().includes(term))
     .forEach((todo) => todo.classList.add("filtered"));
@@ -46,7 +52,10 @@ const search = (term) => {
     .forEach((todo) => todo.classList.remove("filtered"));
 };
 
-searchForm.addEventListener("keyup", (e) => {
+searchForm.addEventListener("keyup", () => {
+  // console.log(e.target.value);
+  // console.log(searchForm.value.trim().toLowerCase());
   const term = searchForm.value.trim().toLowerCase();
+  // console.log(term);
   search(term);
 });
