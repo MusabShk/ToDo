@@ -8,7 +8,7 @@ dom manupulation </br>
 querySelector </br>
 HTML forms </br>
 eventListener </br>
-Array.methods : filter,forEach (used chaining)
+Array.methods : filter, forEach (chaining)
 
 ### Landing Page
 
