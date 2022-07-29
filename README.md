@@ -9,6 +9,7 @@ querySelector </br>
 HTML forms </br>
 eventListener </br>
 Array.methods : filter, forEach (chaining)
+</br>
 
 ### Landing Page
 
