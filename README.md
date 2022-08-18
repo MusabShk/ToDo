@@ -4,7 +4,7 @@ A Webpage having functionality to add a new Todo, delete a Todo when done and Se
 
 #### Concepts used are:
 
-dom manupulation </br>
+dom manipulation </br>
 querySelector </br>
 HTML forms </br>
 eventListener </br>
